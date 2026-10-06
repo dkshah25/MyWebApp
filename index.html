@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebApp - CI/CD Pipeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 650px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+        .flow-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0f172a;
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin: 25px 0;
+            border: 1px solid #334155;
+        }
+        .flow-step {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #38bdf8;
+        }
+        .flow-arrow {
+            color: #64748b;
+            font-weight: bold;
+        }
+        .status-badge {
+            display: inline-block;
+            background: #0284c7;
+            color: #f0f9ff;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Welcome to MyWebApp</h1>
+        <p class="subtitle">WAD Experiment 12 &bull; Git &bull; Jenkins &bull; Apache Tomcat</p>
+        
+        <div class="flow-container">
+            <span class="flow-step">Git (Local)</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">GitHub</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Jenkins CI</span>
+            <span class="flow-arrow">&rarr;</span>
+            <span class="flow-step">Tomcat</span>
+        </div>
+
+        <div class="status-badge">Application Status: Ready for Deployment</div>
+
+        <footer>
+            Prepared for Assignment 12 &bull; CI/CD Deployment Flow
+        </footer>
+    </div>
+</body>
+</html>
